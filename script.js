@@ -19,5 +19,11 @@ let left=document.querySelector(".imagecontainer");
 
 })
 
-    
+const icon=document.querySelector(".styleicon");
+const nav_header=document.querySelector('body');
+const togglNavBar=()=>{
+    nav_header.classList.toggle('active');
+}
+
+icon.addEventListener("click", ()=>togglNavBar());
    
