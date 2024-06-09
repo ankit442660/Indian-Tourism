@@ -18,7 +18,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgb(188, 188, 232);
+            background-color:#7fb3af;
+            
         }
 
         .main {
@@ -32,7 +33,7 @@
             padding-left: 2rem;
             padding-right: 2rem;
             background-color: white;
-            box-shadow: -5px 5px 2px rgb(145, 106, 106);
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.199),inset 10px 10px 30px rgba(254, 245, 245, 0.199);
 
         }
 
@@ -50,6 +51,7 @@
 
         .main h2 {
             font-size: 2rem;
+            color: black;
 
         }
 
@@ -60,17 +62,19 @@
         }
 
         label {
+            color: rgb(15, 15, 15);
             font-size: 1.5rem;
         }
 
         input {
 
             text-align: start;
-            border-radius: 0.5rem;
+            border-radius: 0.1rem;
             outline: none;
-            padding: 0.5rem;
+            padding: 0.3rem;
             border: 1px solid black;
             font-size: 1.3rem;
+
         }
 
 
@@ -83,18 +87,19 @@
             border: 0;
             font-size: 1.6rem;
             color: white;
-            background-color: blue;
+            background-color: #362fc9;
             cursor: pointer;
             transition: all 0.2s;
         }
 
         #button:hover {
             transform: scale(1.04);
+            background-color: rgb(32, 85, 32);
         }
         @media only screen and ( max-width : 700px ){
             .main{
-                padding-left: 0.1re,;
-                padding-right: 0.1rem;
+                padding-left: 0.8rem;
+                padding-right: 0.8rem;
             }
             
         }
@@ -104,27 +109,27 @@
 <body>
     <div class="contianer">
         <div class="main">
-            <h2>Contact Us</h2>
+            <h2 >Contact Us</h2>
             <form action="">
                 <div class="div">
                     <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" placeholder="name">
+                    <input type="text" name="name" id="name">
                 </div>
                 <div class="div">
                     <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="email">
+                    <input type="email" name="email" id="email">
                 </div>
                 <div class="div">
                     <label for="inquery">Inquey:</label>
-                    <input type="text" name="inquery" id="inquery" placeholder="inquery">
+                    <input type="text" name="inquery" id="inquery" >
                 </div>
                 <div class="div">
                     <label for="message">Message:</label>
-                    <input type="text" name="message" id="message" placeholder="message">
+                    <textarea name="message" id="" cols="0" rows="3" style="padding: 4px;"></textarea>
                 </div>
                 <div class="div">
                     <label for=""></label>
-                    <input type="button" id="button" value="Click Me">
+                    <input type="button" id="button" value="Submit">
                 </div>
 
 
